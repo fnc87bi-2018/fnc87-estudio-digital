@@ -1,0 +1,31 @@
+# FNC87 | Estúdio Digital — Site institucional v1
+
+## Arquivos
+- `index.html` — estrutura e conteúdo do site.
+- `styles.css` — identidade visual e layout responsivo.
+- `script.js` — menu mobile e ano automático no rodapé.
+- `assets/logo-fnc87-horizontal.png` — logotipo horizontal original aprovado.
+- `assets/simbolo-fnc87.png` — símbolo oficial para o destaque e favicon.
+
+## Publicação no GitHub + Cloudflare Pages
+1. Baixe e extraia o ZIP.
+2. Abra o repositório `fnc87-estudio-digital` no GitHub.
+3. Envie os arquivos e pastas mantendo a estrutura acima, na raiz do repositório.
+4. Faça o commit na branch `main`.
+5. O Cloudflare Pages fará a publicação automática.
+
+Configuração do Cloudflare Pages para este site estático:
+- Framework preset: `None`
+- Build command: deixar vazio
+- Build output directory: `/`
+- Root directory: `/`
+
+## Contatos já configurados
+- WhatsApp: +55 51 99238-1725
+- Instagram: @fnc87_estudio_digital
+
+## Observações
+- Os valores de pacotes e preços não foram publicados porque ainda não foram definidos como finais.
+- Os projetos Teclava e Espaço Educacional Lume aparecem como cases de portfólio em formato de apresentação visual.
+- O site não oferece mensalidade obrigatória; atualizações posteriores são combinadas conforme a necessidade.
+- Para trocar imagens ou conteúdo, edite os arquivos mantendo os caminhos relativos.
