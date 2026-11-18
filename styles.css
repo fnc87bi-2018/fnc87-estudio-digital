@@ -141,3 +141,36 @@ h2{font-size:clamp(30px,3.5vw,43px);line-height:1.22;letter-spacing:-1.7px;font-
 .floating-social__whatsapp{background:#25D366}
 .floating-social__instagram{background:radial-gradient(circle at 30% 105%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
 @media(max-width:600px){.floating-social{right:14px;bottom:16px;gap:10px}.floating-social__link{width:49px;height:49px}.floating-social__link svg{width:23px;height:23px}}
+
+
+/* Identidade FNC87 — tema preto, grafite, cinza e verde tecnológico */
+:root{
+  --green:#22C55E;
+  --green-bright:#4ADE80;
+  --graphite:#080B10;
+  --panel:#11161D;
+  --panel2:#171D25;
+  --muted:#A1A1AA;
+  --white:#F8FAFC;
+  --line:rgba(161,161,170,.18);
+}
+body{background:#080B10;color:#F8FAFC}
+.site-header{background:rgba(8,11,16,.94);border-bottom-color:rgba(161,161,170,.16)}
+.hero{background:radial-gradient(ellipse at 78% 45%,rgba(34,197,94,.12),transparent 36%),linear-gradient(115deg,#080B10 0%,#10151B 65%,#090D12 100%)}
+.hero-grid{background-image:linear-gradient(rgba(161,161,170,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(161,161,170,.055) 1px,transparent 1px)}
+.trust-strip{background:#0D1117}
+.section-about,.section-portfolio{background:#10151B}
+.section-services,.section-process{background:#080B10}
+.service-card{background:linear-gradient(145deg,#171D25,#10151B);border-color:rgba(161,161,170,.2)}
+.service-featured{background:linear-gradient(145deg,#17231D,#11171A);border-color:rgba(34,197,94,.38)}
+.project-card{background:#151B23;border-color:rgba(161,161,170,.2)}
+.project-shot{background:#090D12}
+.project-shot .browser-bar{background:rgba(8,11,16,.94);border-color:rgba(161,161,170,.18)}
+.cta-section{background:radial-gradient(ellipse at 50% 0%,rgba(34,197,94,.11),transparent 48%),linear-gradient(110deg,#11171A,#0C1117 65%,#080B10)}
+.site-footer{background:#05070A;border-top-color:rgba(161,161,170,.18)}
+.float-card{background:#171D25;border-color:rgba(161,161,170,.22)}
+.button-outline{background:rgba(255,255,255,.025);border-color:rgba(161,161,170,.28)}
+.main-nav a,.footer-links a{color:#C4C7CC}
+.hero-lead,.about-text p,.section-heading>p,.service-card p,.project-card>p,.cta-content>p{color:#B0B5BD}
+.hero-signature,.hero-bottom,.portfolio-note,.footer-main>p{color:#9299A3}
+@media(max-width:700px){.main-nav{background:#10151B}}
