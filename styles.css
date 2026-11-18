@@ -174,3 +174,52 @@ body{background:#080B10;color:#F8FAFC}
 .hero-lead,.about-text p,.section-heading>p,.service-card p,.project-card>p,.cta-content>p{color:#B0B5BD}
 .hero-signature,.hero-bottom,.portfolio-note,.footer-main>p{color:#9299A3}
 @media(max-width:700px){.main-nav{background:#10151B}}
+
+
+/* Navegação lateral vertical — layout institucional FNC87 */
+html{scroll-padding-top:28px}
+body{padding-left:250px}
+.site-header.sidebar-nav{position:fixed;inset:0 auto 0 0;width:250px;height:100vh;z-index:1000;background:linear-gradient(180deg,#10151B 0%,#0B0F14 100%);border-right:1px solid rgba(161,161,170,.18);border-bottom:0;box-shadow:12px 0 36px rgba(0,0,0,.16);backdrop-filter:blur(18px)}
+.sidebar-nav .nav-wrap{width:100%;height:100%;margin:0;padding:30px 22px 24px;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0}
+.sidebar-nav .brand{width:190px;margin:0 auto 58px;padding:8px 0}
+.sidebar-nav .main-nav{display:flex;flex-direction:column;align-items:stretch;gap:7px;width:100%}
+.sidebar-nav .main-nav a{position:relative;display:flex;align-items:center;min-height:48px;padding:0 15px;border:1px solid transparent;border-radius:9px;color:#A1A1AA;font-size:12px;font-weight:500;letter-spacing:.15px;transition:background .2s ease,color .2s ease,border-color .2s ease}
+.sidebar-nav .main-nav a:before{content:"";width:6px;height:6px;border-radius:2px;background:#59616D;margin-right:13px;transition:background .2s ease,box-shadow .2s ease}
+.sidebar-nav .main-nav a:hover,.sidebar-nav .main-nav a:focus-visible{color:#F8FAFC;background:rgba(34,197,94,.07);border-color:rgba(34,197,94,.15)}
+.sidebar-nav .main-nav a:hover:before,.sidebar-nav .main-nav a:focus-visible:before{background:#22C55E;box-shadow:0 0 10px rgba(34,197,94,.65)}
+.sidebar-bottom{margin-top:auto;display:flex;flex-direction:column;gap:16px}
+.sidebar-caption{font:600 8px/1.8 'Montserrat',sans-serif;letter-spacing:1.35px;color:#727B87;text-align:center;padding:0 8px}
+.sidebar-nav .header-cta{width:100%;min-height:48px;justify-content:center}
+.sidebar-version{font:500 8px 'Montserrat',sans-serif;letter-spacing:1.2px;text-align:center;color:#626B76;padding-top:15px;border-top:1px solid rgba(161,161,170,.13)}
+.sidebar-nav .menu-toggle{display:none}
+.top-glow{position:fixed;top:0;left:250px;right:0;z-index:1001;height:2px}
+.hero{min-height:calc(100vh - 2px);display:flex;flex-direction:column;justify-content:center;padding-top:72px}
+.hero-layout{width:min(1120px,calc(100% - 72px))}
+.section,.cta-section{scroll-margin-top:28px}
+@media(max-width:900px){
+  body{padding-left:0}
+  .top-glow{left:0}
+  .site-header.sidebar-nav{inset:0 0 auto 0;width:100%;height:76px}
+  .sidebar-nav .nav-wrap{width:100%;height:76px;padding:0 22px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:18px}
+  .sidebar-nav .brand{width:170px;margin:0;padding:0}
+  .sidebar-nav .menu-toggle{display:block;order:3;cursor:pointer}
+  .sidebar-nav .main-nav{display:none;position:absolute;top:76px;left:0;right:0;width:100%;padding:14px 22px 20px;background:#10151B;border-bottom:1px solid rgba(161,161,170,.18);box-shadow:0 18px 28px rgba(0,0,0,.3);gap:5px}
+  .sidebar-nav .main-nav.open{display:flex}
+  .sidebar-nav .main-nav a{min-height:44px}
+  .sidebar-bottom{margin:0 0 0 auto;display:block}
+  .sidebar-caption,.sidebar-version{display:none}
+  .sidebar-nav .header-cta{width:auto;min-height:40px;padding:0 14px;font-size:10px}
+  .hero{min-height:680px;padding-top:115px}
+  .hero-layout{width:min(1120px,calc(100% - 48px))}
+}
+@media(max-width:560px){
+  .sidebar-nav .brand{width:145px}
+  .sidebar-nav .nav-wrap{padding:0 15px;gap:10px}
+  .sidebar-nav .header-cta{font-size:9px;padding:0 10px}
+  .hero{min-height:auto;padding:100px 0 35px}
+  .hero-layout{grid-template-columns:1fr}
+  .hero-art{height:320px}
+  .hero-logo-frame{width:210px;height:210px}
+  .orbit-one{width:250px}.orbit-two{width:300px}.orbit-three{width:340px}
+  .float-top{top:20px;right:0}.float-bottom{bottom:24px;left:0}
+}
