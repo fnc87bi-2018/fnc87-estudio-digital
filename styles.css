@@ -120,3 +120,14 @@ h2{font-size:clamp(30px,3.5vw,43px);line-height:1.22;letter-spacing:-1.7px;font-
 .project-visit{flex:none;display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;border:1px solid rgba(34,197,94,.45);border-radius:8px;color:#22c55e;text-decoration:none;font-size:11px;font-weight:700;white-space:nowrap;transition:background .2s ease,color .2s ease}
 .project-visit:hover{background:#22c55e;color:#0f172a}
 @media(max-width:700px){.project-shot{height:185px}.project-shot>img{object-fit:contain}}
+
+
+/* Ajuste final do alinhamento dos cards do portfólio */
+.portfolio-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;align-items:stretch!important;gap:20px!important}
+.portfolio-grid>.project-card{display:flex!important;flex-direction:column!important;min-width:0!important;align-self:stretch!important;overflow:hidden!important}
+.portfolio-grid>.project-card>.project-shot{width:100%!important;flex:none!important;height:210px!important;display:block!important;position:relative!important}
+.portfolio-grid>.project-card>.project-info{width:100%!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;padding:20px 20px 8px!important;flex:none!important}
+.portfolio-grid>.project-card>p{padding:0 20px 20px!important;margin:0!important;width:100%!important}
+.portfolio-grid .project-info h3{margin:7px 0 0!important}
+.portfolio-grid .project-visit{flex:none!important}
+@media(max-width:760px){.portfolio-grid{grid-template-columns:1fr!important}.portfolio-grid>.project-card>.project-shot{height:190px!important}.portfolio-grid>.project-card>.project-info{padding:16px 16px 8px!important}.portfolio-grid>.project-card>p{padding:0 16px 16px!important}}
