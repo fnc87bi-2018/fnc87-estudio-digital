@@ -131,3 +131,13 @@ h2{font-size:clamp(30px,3.5vw,43px);line-height:1.22;letter-spacing:-1.7px;font-
 .portfolio-grid .project-info h3{margin:7px 0 0!important}
 .portfolio-grid .project-visit{flex:none!important}
 @media(max-width:760px){.portfolio-grid{grid-template-columns:1fr!important}.portfolio-grid>.project-card>.project-shot{height:190px!important}.portfolio-grid>.project-card>.project-info{padding:16px 16px 8px!important}.portfolio-grid>.project-card>p{padding:0 16px 16px!important}}
+
+
+/* Atalhos flutuantes de contato e redes sociais */
+.floating-social{position:fixed;right:22px;bottom:22px;z-index:9999;display:flex;flex-direction:column;gap:12px;align-items:center}
+.floating-social__link{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28);border:2px solid rgba(255,255,255,.88);transition:transform .2s ease,box-shadow .2s ease}
+.floating-social__link:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 12px 28px rgba(0,0,0,.34)}
+.floating-social__link svg{width:25px;height:25px;display:block}
+.floating-social__whatsapp{background:#25D366}
+.floating-social__instagram{background:radial-gradient(circle at 30% 105%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
+@media(max-width:600px){.floating-social{right:14px;bottom:16px;gap:10px}.floating-social__link{width:49px;height:49px}.floating-social__link svg{width:23px;height:23px}}
