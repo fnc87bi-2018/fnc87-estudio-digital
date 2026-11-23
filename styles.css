@@ -303,3 +303,28 @@ body{padding-left:250px}
 .pricing-condition ul{padding-left:17px;margin:0}
 @media(max-width:850px){.pricing-grid{grid-template-columns:1fr 1fr}.pricing-includes{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.pricing-grid,.pricing-includes,.pricing-conditions{grid-template-columns:1fr}.pricing-intro{align-items:flex-start;flex-direction:column}.pricing-card .pricing-desc{min-height:0}}
+
+/* BLACK FRIDAY FNC87 · campanha 23–29/11/2026 */
+.black-friday-banner{position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 45%,rgba(34,197,94,.15),transparent 38%),linear-gradient(115deg,#111820,#080B10 68%);border-bottom:1px solid rgba(34,197,94,.28)}
+.black-friday-inner{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:30px;min-height:390px;padding-top:42px;padding-bottom:42px}
+.black-friday-kicker{display:inline-flex;align-items:center;gap:9px;color:#9BE8B5;font:700 9px var(--font-title);letter-spacing:1.6px}
+.black-friday-kicker i{width:7px;height:7px;border-radius:50%;background:#22C55E;box-shadow:0 0 12px #22C55E}
+.black-friday-copy h2{font:800 clamp(27px,4vw,43px) var(--font-title);letter-spacing:-1.8px;margin:13px 0 0;color:#F7FAFC}
+.black-friday-copy h2 span{color:#22C55E}
+.black-friday-offer{font:800 clamp(64px,9vw,104px)/.98 var(--font-title);letter-spacing:-5px;color:#22C55E;text-shadow:0 0 35px rgba(34,197,94,.22);margin:8px 0}
+.black-friday-offer small{font-size:.38em;letter-spacing:1px}
+.black-friday-copy p{max-width:490px;color:#C2CBD4;font-size:14px;line-height:1.8;margin:12px 0 20px}
+.black-friday-copy p strong{color:#fff}
+.black-friday-footnote{display:block;color:#7F8B98;font-size:9px;line-height:1.6;margin-top:13px}
+.black-friday-visual{position:relative;min-height:300px;display:flex;align-items:flex-end;justify-content:center}
+.black-friday-visual:before{content:"";position:absolute;width:290px;height:290px;border:1px solid rgba(34,197,94,.25);border-radius:50%;box-shadow:0 0 65px rgba(34,197,94,.1),inset 0 0 55px rgba(34,197,94,.07)}
+.black-friday-visual img{position:relative;z-index:1;max-width:100%;width:300px;height:320px;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 16px 35px rgba(0,0,0,.45))}
+.black-friday-sign{position:absolute;z-index:2;right:0;top:48px;display:flex;flex-direction:column;align-items:center;padding:15px 20px;border:1px solid rgba(34,197,94,.7);border-radius:12px;background:linear-gradient(145deg,#1b2925,#0c1212);box-shadow:0 12px 35px rgba(0,0,0,.4),0 0 28px rgba(34,197,94,.13);transform:rotate(5deg)}
+.black-friday-sign span,.black-friday-sign small{font:700 8px var(--font-title);letter-spacing:1.3px;color:#C8F7D6}
+.black-friday-sign strong{font:800 30px var(--font-title);color:#22C55E;white-space:nowrap}
+.black-friday-strip{padding:27px 0;background:linear-gradient(100deg,#14231d,#101820);border-bottom:1px solid rgba(34,197,94,.27)}
+.black-friday-strip-inner{display:flex;align-items:center;justify-content:space-between;gap:22px}
+.black-friday-strip h2{font:700 clamp(20px,3vw,29px) var(--font-title);margin:8px 0 3px}
+.black-friday-strip h2 strong{color:#22C55E}
+.black-friday-strip p{margin:0;color:#AAB8C9;font-size:11px}
+@media(max-width:700px){.black-friday-inner{grid-template-columns:1fr;gap:4px;padding-top:30px;padding-bottom:24px}.black-friday-copy h2{font-size:31px}.black-friday-offer{font-size:76px}.black-friday-visual{min-height:235px;margin-top:4px}.black-friday-visual:before{width:210px;height:210px}.black-friday-visual img{height:245px;width:230px}.black-friday-sign{right:2%;top:16px;padding:10px 13px}.black-friday-sign strong{font-size:23px}.black-friday-strip-inner{align-items:flex-start;flex-direction:column}.black-friday-strip .button{width:100%}}
