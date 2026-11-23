@@ -368,3 +368,8 @@ body{padding-left:250px}
  .black-friday-strip-inner{align-items:flex-start;flex-direction:column}
  .black-friday-strip .button{width:100%}
 }
+
+/* Campanha da home sem avatar duplicado: o avatar permanece apenas no hero principal */
+.black-friday-inner{grid-template-columns:minmax(0,1fr);min-height:0}
+.black-friday-copy{max-width:760px}
+@media(max-width:700px){.black-friday-inner{display:block}.black-friday-copy{max-width:100%}}
