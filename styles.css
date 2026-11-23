@@ -373,3 +373,9 @@ body{padding-left:250px}
 .black-friday-inner{grid-template-columns:minmax(0,1fr);min-height:0}
 .black-friday-copy{max-width:760px}
 @media(max-width:700px){.black-friday-inner{display:block}.black-friday-copy{max-width:100%}}
+
+/* Evita que o cabeçalho fixo cubra o início da campanha na home mobile */
+@media(max-width:700px){
+  body:has(.black-friday-banner) .black-friday-banner{padding-top:76px}
+  body:has(.black-friday-banner) .black-friday-inner{padding-top:26px}
+}
