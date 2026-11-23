@@ -379,3 +379,8 @@ body{padding-left:250px}
   body:has(.black-friday-banner) .black-friday-banner{padding-top:76px}
   body:has(.black-friday-banner) .black-friday-inner{padding-top:26px}
 }
+
+/* CTA secundário da Black Friday: acesso à tabela comercial */
+.black-friday-prices{display:flex;width:max-content;min-width:245px;justify-content:center;margin-top:10px;border-color:rgba(34,197,94,.45);color:#C7F9D7;background:rgba(34,197,94,.06)}
+.black-friday-prices:hover{background:rgba(34,197,94,.13);border-color:#22C55E;color:#fff}
+@media(max-width:700px){.black-friday-prices{width:100%;max-width:360px;margin:10px auto 0}}
