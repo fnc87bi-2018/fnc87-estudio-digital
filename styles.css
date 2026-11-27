@@ -389,3 +389,23 @@ body{padding-left:250px}
 @media(max-width:700px){
   body:has(.page-investimento) .black-friday-strip{padding-top:103px}
 }
+
+
+/* Case STI Vestuário: preview institucional alinhado aos demais projetos */
+.page-portfolio .portfolio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:stretch}
+.page-portfolio .sti-project-visual{display:block;height:285px;position:relative;padding:14px;background:
+ radial-gradient(ellipse at 78% 28%,rgba(55,135,210,.22),transparent 42%),
+ linear-gradient(135deg,#071a30 0%,#0b2c4b 52%,#102f4c 100%);border-bottom:1px solid rgba(255,255,255,.08)}
+.page-portfolio .sti-project-visual:hover .sti-preview{transform:translateY(-4px)}
+.page-portfolio .sti-preview{position:absolute;inset:55px 32px 20px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:25px 30px;overflow:hidden;
+ background:linear-gradient(112deg,#f8fbff 0%,#fff 58%,#eaf3fb 100%);color:#173b5a;box-shadow:0 18px 40px rgba(0,0,0,.28);transition:transform .25s ease}
+.page-portfolio .sti-preview:before{content:"";position:absolute;right:-50px;top:-75px;width:230px;height:230px;border:1px solid rgba(24,86,133,.16);border-radius:50%;box-shadow:0 0 0 28px rgba(24,86,133,.035),0 0 0 58px rgba(24,86,133,.025)}
+.page-portfolio .sti-preview-kicker{position:relative;z-index:1;font:700 8px var(--font-title);letter-spacing:1.7px;color:#28618b}
+.page-portfolio .sti-preview strong{position:relative;z-index:1;display:block;margin:10px 0 2px;font:800 clamp(23px,3vw,34px)/1.05 var(--font-title);letter-spacing:-1.2px;color:#123d62}
+.page-portfolio .sti-preview strong b{color:#2581b9}
+.page-portfolio .sti-preview>span:not(.sti-preview-kicker){position:relative;z-index:1;font:700 9px var(--font-title);letter-spacing:1.5px;color:#52748e}
+.page-portfolio .sti-preview>i{position:relative;z-index:1;width:58px;height:3px;margin:17px 0 12px;background:#2581b9;border-radius:5px}
+.page-portfolio .sti-preview small{position:relative;z-index:1;font:600 7px var(--font-title);letter-spacing:1px;color:#647d91}
+.page-portfolio .sti-project-visual .project-index{z-index:2;color:#fff;background:rgba(5,20,35,.82);padding:7px 10px;border-radius:20px}
+.page-portfolio .project-visit{display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border:1px solid rgba(34,197,94,.4);border-radius:7px;color:#39E66F;font-size:10px;font-weight:600;white-space:nowrap}
+@media(max-width:700px){.page-portfolio .portfolio-grid{grid-template-columns:1fr}.page-portfolio .sti-project-visual{height:250px}.page-portfolio .sti-preview{inset:55px 22px 18px;padding:20px}.page-portfolio .sti-preview strong{font-size:27px}}
