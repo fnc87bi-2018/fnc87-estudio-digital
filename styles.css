@@ -479,3 +479,12 @@ body{padding-left:250px}
 .footer-brand-complete{width:155px;flex:0 0 155px;display:flex;align-items:center;justify-content:center}
 .footer-brand-complete img{width:100%;height:150px;object-fit:contain;display:block}
 @media(max-width:700px){.footer-main{flex-wrap:wrap;justify-content:center;text-align:center}.footer-brand-complete{width:145px;flex-basis:145px}.footer-brand-complete img{height:140px}.footer-links{width:100%;justify-content:center;flex-wrap:wrap}}
+
+/* Marca completa no menu principal */
+.brand-lockup{width:205px;display:flex;align-items:center;gap:9px;min-width:0}
+.brand-lockup>img{width:48px;height:48px;object-fit:contain;flex:0 0 48px}
+.brand-wordmark{display:flex;flex-direction:column;line-height:1}
+.brand-wordmark strong{font:800 25px/.95 var(--font-title);letter-spacing:-1.4px;color:#F8FAFC}
+.brand-wordmark strong span{color:#39FF14}
+.brand-wordmark small{margin-top:5px;font:700 8px/1 var(--font-title);letter-spacing:2.1px;color:#E5E7EB;white-space:nowrap}
+@media(max-width:700px){.brand-lockup{width:168px;gap:7px}.brand-lockup>img{width:40px;height:40px;flex-basis:40px}.brand-wordmark strong{font-size:22px}.brand-wordmark small{font-size:7px;letter-spacing:1.7px}}
