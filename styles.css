@@ -524,3 +524,11 @@ body{padding-left:250px}
 .page-servicos .services-bottom-cta>a{flex:none;padding:13px 17px;border-radius:8px;background:#39FF14;color:#07110b;font:700 10px var(--font-title);box-shadow:0 0 15px rgba(57,255,20,.2);transition:.2s}
 .page-servicos .services-bottom-cta>a:hover{background:#69FF4C;box-shadow:0 0 24px rgba(57,255,20,.38);transform:translateY(-2px)}
 @media(max-width:700px){.page-servicos .services-intro{align-items:flex-start;flex-direction:column;gap:7px}.page-servicos .service-grid-new{grid-template-columns:1fr}.page-servicos .service-card-new{padding:21px}.page-servicos .services-bottom-cta{align-items:stretch;flex-direction:column;padding:20px}.page-servicos .services-bottom-cta>a{text-align:center}}
+
+/* Banner Black Friday — arte final aprovada */
+.black-friday-image-banner{display:block;padding:0;background:#080b10;overflow:hidden}
+.black-friday-image-banner .black-friday-art-link{display:block;max-width:1728px;margin:0 auto;line-height:0}
+.black-friday-image-banner .black-friday-art-link img{display:block;width:100%;height:auto;margin:0 auto}
+.black-friday-image-actions{display:flex;align-items:center;justify-content:center;gap:18px;padding:14px 20px 18px}
+.black-friday-image-actions span{color:#87939e;font-size:10px}
+@media(max-width:600px){.black-friday-image-actions{flex-direction:column;gap:8px}.black-friday-image-actions .button{width:100%;text-align:center}}
