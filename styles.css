@@ -409,3 +409,38 @@ body{padding-left:250px}
 .page-portfolio .sti-project-visual .project-index{z-index:2;color:#fff;background:rgba(5,20,35,.82);padding:7px 10px;border-radius:20px}
 .page-portfolio .project-visit{display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border:1px solid rgba(34,197,94,.4);border-radius:7px;color:#39E66F;font-size:10px;font-weight:600;white-space:nowrap}
 @media(max-width:700px){.page-portfolio .portfolio-grid{grid-template-columns:1fr}.page-portfolio .sti-project-visual{height:250px}.page-portfolio .sti-preview{inset:55px 22px 18px;padding:20px}.page-portfolio .sti-preview strong{font-size:27px}}
+
+
+/* Portfólio organizado por categoria: sites em lista e BI em seção própria */
+.page-portfolio .portfolio-section{margin:0 0 54px}
+.page-portfolio .portfolio-section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin:0 0 20px;padding-bottom:16px;border-bottom:1px solid rgba(148,163,184,.2)}
+.page-portfolio .portfolio-section-heading h2{margin:7px 0 6px;font:800 clamp(23px,3vw,30px)/1.15 var(--font-title);letter-spacing:-.7px;color:#F8FAFC}
+.page-portfolio .portfolio-section-heading p{margin:0;max-width:680px;color:#A1A1AA;font-size:12px;line-height:1.7}
+.page-portfolio .section-count{flex:none;color:#4ADE80;font:700 9px var(--font-title);letter-spacing:1.4px;padding:8px 11px;border:1px solid rgba(34,197,94,.28);border-radius:7px}
+.page-portfolio .sites-list{display:flex;flex-direction:column;gap:14px}
+.page-portfolio .site-list-card{display:grid;grid-template-columns:minmax(250px,36%) minmax(0,1fr);grid-template-rows:auto 1fr;column-gap:0;align-items:stretch;overflow:hidden}
+.page-portfolio .site-list-card .project-visual{grid-column:1;grid-row:1/4;height:100%;min-height:215px;border:0;border-right:1px solid rgba(255,255,255,.07);border-radius:0}
+.page-portfolio .site-list-card .project-visual img{height:100%;min-height:215px;object-fit:cover}
+.page-portfolio .site-list-card .project-info{grid-column:2;grid-row:1;align-items:center;margin:22px 24px 0}
+.page-portfolio .site-list-card>p{grid-column:2;margin:12px 24px 0;align-self:start}
+.page-portfolio .site-list-card>p:last-child{margin-bottom:20px}
+.page-portfolio .site-list-card .sti-project-visual{height:auto;min-height:215px}
+.page-portfolio .site-list-card .sti-preview{inset:45px 18px 18px;padding:18px}
+.page-portfolio .site-list-card .sti-preview strong{font-size:clamp(19px,2.2vw,29px)}
+.page-portfolio .bi-projects-grid{display:grid;grid-template-columns:minmax(0,1fr)}
+.page-portfolio .bi-list-card{display:grid;grid-template-columns:minmax(250px,36%) minmax(0,1fr);grid-template-rows:auto 1fr;overflow:hidden}
+.page-portfolio .bi-list-card .project-visual{grid-column:1;grid-row:1/4;height:100%;min-height:220px;border-radius:0;border:0;border-right:1px solid rgba(255,255,255,.07)}
+.page-portfolio .bi-list-card .project-info{grid-column:2;margin:22px 24px 0}
+.page-portfolio .bi-list-card>p{grid-column:2;margin:12px 24px 0}
+.page-portfolio .bi-list-card>p:last-child{margin-bottom:20px}
+@media(max-width:700px){
+ .page-portfolio .portfolio-section{margin-bottom:38px}
+ .page-portfolio .portfolio-section-heading{align-items:flex-start}
+ .page-portfolio .section-count{font-size:8px;padding:7px}
+ .page-portfolio .site-list-card,.page-portfolio .bi-list-card{grid-template-columns:1fr;grid-template-rows:auto}
+ .page-portfolio .site-list-card .project-visual,.page-portfolio .bi-list-card .project-visual{grid-column:1;grid-row:auto;height:210px;min-height:210px;border-right:0;border-bottom:1px solid rgba(255,255,255,.07)}
+ .page-portfolio .site-list-card .project-visual img,.page-portfolio .bi-list-card .project-visual img{height:210px;min-height:210px}
+ .page-portfolio .site-list-card .project-info,.page-portfolio .bi-list-card .project-info{grid-column:1;grid-row:auto;margin:17px 17px 0;align-items:flex-start}
+ .page-portfolio .site-list-card>p,.page-portfolio .bi-list-card>p{grid-column:1;margin:10px 17px 0}
+ .page-portfolio .site-list-card>p:last-child,.page-portfolio .bi-list-card>p:last-child{margin-bottom:17px}
+}
